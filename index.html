@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Generator?</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Who pays the bill?</h1>
 
-    <input type="text" id="participantInput" placeholder="Participant's Name" />
-    <button onclick="addParticipant()">Add participant!</button>
+    <div class="container">
+        <h1>Who pays the bill?</h1>
 
-    <ul id="participantList"></ul>
+        <p>Insert name: </p>
+        <input type="text" id="participantInput" />
+        <button onclick="addParticipant()">Add participant!</button>
 
-    <button onclick="pickWinner()">Pick the lucky winner!</button>
+        <div class="list-container">
+            <ul id="participantList"></ul>
+        </div>
 
-    <p id="result"></p>
+        <button onclick="pickWinner()">Pick the lucky winner!</button>
+
+        <p id="result"></p>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
